@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      /* .row{
+        overflow-x:scroll;
+      } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="alert alert-success text-center">CRUD Operation Using Ajex</h1>
+        <div class="row">
+                <div class="col-md-6">
+                   <form action="javascript:;" id="form" method="post" >
+                        <h3 class="alert alert-primary text-center">Add/Insert details</h1>
+                        <input type="hidden" id="stid" name="update_id" class="form-control">
+                        <label class="for-label" >Name</label>
+                        <input type="text" id="nameid" class="form-control" required>
+                        <label class="for-label" >Email</label>
+                        <input type="email" id="emailid" class="form-control" required>
+                        <label class="for-label" >Mobile NO.</label>
+                        <input type="text" id="mobileid" class="form-control" required>
+                        <label class="for-label" >Password</label>
+                        <input type="password" id="passwordid" class="form-control mb-3" required>
+                        <input type="submit" id="btnadd" name="submit" class="btn btn-primary">
+                        <!-- <input type="button" id="helloworld" name="" class="btn btn-primary"> -->
+                        <div id="msg" class="alert alert-danger mt-3">....</div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <label><b>Search in box:</b></label>
+                  <input type="text" id="search" name="search_data" class="form-control">
+                  <!-- <button type="button" id="search" class="btn btn-success" >SEARCH</button> -->
+                   <table class="table table-bordered text-center">
+                      <thead>
+                         <th>ID</th>
+                         <th>Name</th>
+                         <th>Email</th>
+                         <th>MobileNO</th>
+                         <th>Password</th>
+                         <th colspan="2">Action</th>
+                       </thead>
+                       <tbody id="table_body">
+                         <tr>
+                         </tr>
+                       </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="js/ajex.js"></script>
+</body>
+</html>
